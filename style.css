@@ -1,0 +1,15 @@
+﻿.rounded {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+body {
+    background-color: #121212;
+    color: #e5e9f0;
+    text-emphasis-color: #d8dee9;
+}
+
+button {
+    border-color: #d8dee9;
+    background-color: #3b4252;
+}
