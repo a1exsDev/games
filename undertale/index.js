@@ -883,6 +883,14 @@ if (/Android|iPhone|iPod/i.test(navigator.userAgent)) {
   outputContainerElement.hidden = true;
 }
 
+const isMultiplayer = function () {
+  if (typeof GM_is_multiplayer !== 'function') {
+    return false;
+  }
+
+  return GM_is_multiplayer() !== 0;
+}
+
 document.addEventListener("visibilitychange", (event) => {
   if (document.visibilityState != "visible") {
     pause();
